@@ -1,0 +1,170 @@
+/* =========================================================== */
+/* 00. Widget - Elementor Image Gallery
+/* =========================================================== */
+.dplf-image-gallery {
+  position: relative;
+}
+
+.dplf-image-gallery .dplf-gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.dplf-image-gallery .dplf-gallery-item .dplf-gallery-thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+
+.dplf-image-gallery .dplf-gallery-item .dplf-gallery-thumbnail img {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+/*Overlay*/
+.dplf-image-gallery .dplf-overlay {
+  display: -ms-flexbox;
+  display: flex; 
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding: 30px 30px;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.dplf-image-gallery .dplf-overlay > :last-child {
+  margin-bottom: 0;
+}
+
+.dplf-image-gallery .dplf-gallery-item .dplf-image-gallery-content-inner {
+  transform: translateZ(20px);
+}
+
+.dplf-image-gallery .dplf-gallery-overlay-icon {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+  font-size: 50px;
+  transition: all .25s ease-in-out;
+}
+
+.dplf-image-gallery .dplf-gallery-overlay-icon svg {
+  width: 40px;
+  height: auto;
+  fill: #fff;
+}
+
+.dplf-image-gallery .dplf-image-gallery-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.dplf-image-gallery .dplf-gallery-item .dplf-image-gallery-inner {
+  position: relative;
+}
+
+.dplf-image-gallery .dplf-gallery-item .dplf-gallery-overlay-caption {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+@media (max-width:767px) {
+  .elementor-widget-dplf_image_gallery .elementor-widget-container {
+    overflow: hidden;
+  }
+}
+
+/* Prevent flash of unstyled images before JS initializes appear effects */
+.dplf-gallery-thumbnail[class*="dplf-image-gallery-appear--"] {
+  opacity: 0;
+}
+
+/* Column Layout */
+.dplf-image-gallery .dplf-gallery-item {
+    float: left;
+}
+
+.dplf-image-gallery-columns-1 .dplf-gallery-item { width: 100%; }
+.dplf-image-gallery-columns-2 .dplf-gallery-item { width: 50%; }
+.dplf-image-gallery-columns-3 .dplf-gallery-item { width: 33.3333%; }
+.dplf-image-gallery-columns-4 .dplf-gallery-item { width: 25%; }
+.dplf-image-gallery-columns-5 .dplf-gallery-item { width: 20%; }
+.dplf-image-gallery-columns-6 .dplf-gallery-item { width: 16.6666%; }
+
+/* Zigzag Effect for Large Screens (≥1200px) */
+@media (min-width: 1200px) {
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-2 .dplf-gallery-item:nth-child(2n+2) {
+        margin-top: 50px;
+    }
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-3 .dplf-gallery-item:nth-child(3n+2) {
+        margin-top: 50px;
+    }
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-4 .dplf-gallery-item:nth-child(4n+2),
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-4 .dplf-gallery-item:nth-child(4n+4) {
+        margin-top: 50px;
+    }
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-5 .dplf-gallery-item:nth-child(5n+2),
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-5 .dplf-gallery-item:nth-child(5n+4) {
+        margin-top: 50px;
+    }
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-6 .dplf-gallery-item:nth-child(6n+2),
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-6 .dplf-gallery-item:nth-child(6n+4),
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-6 .dplf-gallery-item:nth-child(6n+6) {
+        margin-top: 50px;
+    }
+}
+
+/* Zigzag Effect for Medium Screens (992px–1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-2 .dplf-gallery-item:nth-child(2n+2) {
+        margin-top: 50px;
+    }
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-3 .dplf-gallery-item:nth-child(3n+2) {
+        margin-top: 50px;
+    }
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-4 .dplf-gallery-item:nth-child(4n+2),
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-4 .dplf-gallery-item:nth-child(4n+4) {
+        margin-top: 50px;
+    }
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-5 .dplf-gallery-item:nth-child(5n+2),
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-5 .dplf-gallery-item:nth-child(5n+4) {
+        margin-top: 50px;
+    }
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-6 .dplf-gallery-item:nth-child(6n+2),
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-6 .dplf-gallery-item:nth-child(6n+4),
+    .dplf-image-gallery-zigzag.dplf-image-gallery-columns-6 .dplf-gallery-item:nth-child(6n+6) {
+        margin-top: 50px;
+    }
+}
+
+/* Zigzag Effect for Small Screens (576px–991px), Assuming 2 Columns */
+@media (min-width: 576px) and (max-width: 991px) {
+    .dplf-image-gallery-zigzag .dplf-gallery-item:nth-child(2n+2) {
+        margin-top: 50px;
+    }
+    .dplf-image-gallery-columns-3 .dplf-gallery-item,
+    .dplf-image-gallery-columns-4 .dplf-gallery-item,
+    .dplf-image-gallery-columns-5 .dplf-gallery-item,
+    .dplf-image-gallery-columns-6 .dplf-gallery-item {
+        width: 50%;
+    }
+}
+
+/* Extra Small Screens (<576px), 1 Column, No Zigzag */
+@media (max-width: 575px) {
+    .dplf-image-gallery-columns-2 .dplf-gallery-item,
+    .dplf-image-gallery-columns-3 .dplf-gallery-item,
+    .dplf-image-gallery-columns-4 .dplf-gallery-item,
+    .dplf-image-gallery-columns-5 .dplf-gallery-item,
+    .dplf-image-gallery-columns-6 .dplf-gallery-item {
+        width: 100%;
+    }
+}

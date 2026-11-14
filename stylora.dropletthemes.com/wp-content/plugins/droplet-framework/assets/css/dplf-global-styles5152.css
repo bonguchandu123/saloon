@@ -1,0 +1,853 @@
+/* =========================================================== */
+/* 00. Elementor Shortcodes - Global Styles
+/* =========================================================== */
+.dplf-relative {
+  position: relative;
+}
+
+.dplf-text-center {
+  text-align: center;
+}
+
+.dplf-text-right {
+  text-align: right;
+}
+
+.dplf-text-left {
+  text-align: left;
+}
+
+.dplf-list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.quater-width {
+  width: 25% !important;
+}
+
+.half-width {
+  width: 50% !important;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.dplf-inline {
+  display: inline !important;
+}
+
+.dplf-block {
+  display: block !important;
+}
+
+.dplf-inline-block {
+  display: inline-block !important;
+}
+
+.dplf-clearfix::before {
+  content: "";
+  display: table-cell;
+}
+.dplf-clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dplf-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dplf-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.dplf-inline-flex {
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+
+.dplf-flex-row {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
+}
+
+.dplf-flex-column {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+}
+
+.dplf-flex-row-reverse {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+  -ms-flex-direction: row-reverse !important;
+  flex-direction: row-reverse !important;
+}
+
+.dplf-flex-column-reverse {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: reverse !important;
+  -ms-flex-direction: column-reverse !important;
+  flex-direction: column-reverse !important;
+}
+
+.dplf-justify-content-start {
+  -webkit-box-pack: start !important;
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
+}
+
+.dplf-justify-content-end {
+  -webkit-box-pack: end !important;
+  -ms-flex-pack: end !important;
+  justify-content: flex-end !important;
+}
+
+.dplf-justify-content-center {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.dplf-align-items-start {
+  -webkit-box-align: start !important;
+  -ms-flex-align: start !important;
+  align-items: flex-start !important;
+}
+
+.dplf-align-items-end {
+  -webkit-box-align: end !important;
+  -ms-flex-align: end !important;
+  align-items: flex-end !important;
+}
+
+.dplf-align-items-center {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+@media (min-width:1024px) {
+  .dplf-hide-on-desktop {
+    display: none
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+  .dplf-hide-on-tablet {
+    display: none
+  }
+}
+
+@media (max-width:767px) {
+  .dplf-hide-on-mobile {
+    display: none
+  }
+}
+
+/* =========================================================== */
+/* 00. Widget - Text Editor
+/* =========================================================== */
+.elementor-widget-text-editor .elementor-text-editor p {
+  font-style: normal;
+}
+
+.elementor-widget-text-editor span.elementor-drop-cap-letter {
+  font-size: 50px;
+  color: inherit;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* =========================================================== */
+/* 00. Global Styles - Filter
+/* =========================================================== */
+.dplf-filter {
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 60px;
+}
+
+.dplf-filter a {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-right: 20px;
+  margin-left: 20px;
+  line-height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.dplf-filter a:hover,
+.dplf-filter a.active {
+  color: var(--dplf-color-primary);
+}
+
+@media (max-width:480px) {
+  .dplf-filter span {
+    display: inline-block;
+  }
+
+  .dplf-filter a {
+      text-align: left;
+  }
+
+  .dplf-filter span:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+/* =========================================================== */
+/* 00. Global Styles - Swiper Pagination
+/* =========================================================== */
+.dplf-pagination {
+  --dplf-swiper-dot-color: var(--dplf-color-primary);
+  --dplf-swiper-dot-active-color: var(--dplf-color-primary);
+  --dplf-swiper-stroke-color: var(--dplf-color-primary);
+  --dplf-swiper-stroke-active-color: var(--dplf-color-primary);
+
+  --dplf-swiper-dot-opacity: 0.5;
+  --dplf-swiper-dot-active-opacity: 1;
+
+  /* Sizing & layout */
+  --dplf-swiper-bullet-size: 16px;
+  --dplf-swiper-dot-size: 8px;
+  --dplf-swiper-gap-x: 12px;
+
+  /* Outline params */
+  --dplf-swiper-stroke-width: 2;
+  --dplf-swiper-outline-draw-offset: 12;
+  --dplf-swiper-outline-circle-perimeter: 288;   /* 2πr (r≈44) */
+  --dplf-swiper-outline-square-perimeter: 365;   /* ≈90x90 */
+  --dplf-swiper-outline-diamond-perimeter: 375;  /* ≈90x90 rotated */
+
+  /* Effects */
+  --dplf-swiper-glow-blur: 10px;
+  --dplf-swiper-dot-transition: 0.8s cubic-bezier(0.45, 0, 0.14, 1.03);
+}
+
+.dplf-pagination .swiper-pagination-bullet {
+  position: relative;
+  display: inline-block;
+  width: var(--dplf-swiper-bullet-size);
+  height: var(--dplf-swiper-bullet-size);
+  margin: 0 var(--dplf-swiper-gap-x) !important;
+  background: transparent;
+  opacity: var(--dplf-swiper-dot-opacity);
+  border-radius: 50%;
+  vertical-align: middle;
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+.dplf-pagination .swiper-pagination-bullet .dplf-dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--dplf-swiper-dot-size);
+  height: var(--dplf-swiper-dot-size);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--dplf-swiper-dot-color);
+  transition: background-color .3s ease, transform .3s ease, opacity .3s ease;
+}
+
+.dplf-pagination .swiper-pagination-bullet:hover .dplf-dot,
+.dplf-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active .dplf-dot {
+  transform: translate(-50%, -50%) scale(1.10);
+}
+
+.dplf-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: var(--dplf-swiper-dot-active-opacity);
+}
+
+.dplf-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active .dplf-dot {
+  background: var(--dplf-swiper-dot-active-color);
+}
+
+.dplf-pagination .swiper-pagination-bullet svg {
+  position: absolute;
+  inset: -3px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  fill: none;
+  pointer-events: none;
+  z-index: -1;
+  transition: transform var(--dplf-swiper-dot-transition);
+}
+
+/*Minimal Effect*/
+.dplf-pagination.dplf-pagination-style--minimal .swiper-pagination-bullet {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--dplf-swiper-dot-color);
+}
+
+.dplf-pagination.dplf-pagination-style--minimal .swiper-pagination-bullet .dplf-dot { display: none; }
+.dplf-pagination.dplf-pagination-style--minimal .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--dplf-swiper-dot-active-color);
+}
+
+/*Line Effect*/
+.dplf-pagination.dplf-pagination-style--line .swiper-pagination-bullet {
+  width: 30px; height: 2px; border-radius: 0;
+  background: var(--dplf-swiper-dot-color);
+}
+.dplf-pagination.dplf-pagination-style--line .swiper-pagination-bullet .dplf-dot { display: none; }
+.dplf-pagination.dplf-pagination-style--line .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--dplf-swiper-dot-active-color);
+  width: 45px;
+}
+
+/*Square Effect*/
+.dplf-pagination.dplf-pagination-style--square .swiper-pagination-bullet {
+  width: 10px; height: 10px; border-radius: 0;
+  background: var(--dplf-swiper-dot-color);
+}
+
+.dplf-pagination.dplf-pagination-style--square .swiper-pagination-bullet .dplf-dot { display: none; }
+.dplf-pagination.dplf-pagination-style--square .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--dplf-swiper-dot-active-color);
+}
+
+/*Grow Effect*/
+.dplf-pagination.dplf-pagination-style--glow .swiper-pagination-bullet {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--dplf-swiper-dot-color);
+  /* use currentColor to avoid rgba() with CSS vars */
+  color: var(--dplf-swiper-dot-color);
+  box-shadow: 0 0 0 var(--dplf-swiper-glow-blur) color-mix(in srgb, currentColor 0%, transparent);
+}
+
+.dplf-pagination.dplf-pagination-style--glow .swiper-pagination-bullet .dplf-dot { display: none; }
+.dplf-pagination.dplf-pagination-style--glow .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  transform: scale(1.2);
+  background: var(--dplf-swiper-dot-active-color);
+  color: var(--dplf-swiper-dot-active-color);
+  box-shadow: 0 0 var(--dplf-swiper-glow-blur) var(--dplf-swiper-dot-active-color);
+}
+
+/*Pulse Effect*/
+.dplf-pagination.dplf-pagination-style--pulse .swiper-pagination-bullet {
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--dplf-swiper-dot-color);
+  color: var(--dplf-swiper-dot-color);
+}
+
+.dplf-pagination.dplf-pagination-style--pulse .swiper-pagination-bullet .dplf-dot { display: none; }
+.dplf-pagination.dplf-pagination-style--pulse .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--dplf-swiper-dot-active-color);
+  color: var(--dplf-swiper-dot-active-color);
+}
+
+.dplf-pagination.dplf-pagination-style--pulse .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0 0 0 0 currentColor;
+  opacity: 0.6;
+  animation: dplf-pulse 1.5s infinite;
+}
+
+@keyframes dplf-pulse {
+  0%   { transform: translate(-50%, -50%) scale(1);   box-shadow: 0 0 0 0 currentColor;    opacity: .6; }
+  70%  { transform: translate(-50%, -50%) scale(1.25); box-shadow: 0 0 0 12px currentColor; opacity: 0; }
+  100% { transform: translate(-50%, -50%) scale(1);   box-shadow: 0 0 0 0 currentColor;    opacity: 0; }
+}
+
+/*Ring Effect*/
+.dplf-pagination.dplf-pagination-style--ring .swiper-pagination-bullet {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--dplf-swiper-dot-color);
+  color: var(--dplf-swiper-dot-color);
+}
+
+.dplf-pagination.dplf-pagination-style--ring .swiper-pagination-bullet .dplf-dot { display: none; }
+.dplf-pagination.dplf-pagination-style--ring .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--dplf-swiper-dot-active-color);
+  color: var(--dplf-swiper-dot-active-color);
+}
+
+.dplf-pagination.dplf-pagination-style--ring .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 22px; height: 22px;
+  transform: translate(-50%, -50%);
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  animation: dplf-outline-expand .6s ease forwards;
+}
+
+@keyframes dplf-outline-expand {
+  from { transform: translate(-50%, -50%) scale(.6); opacity: 0; }
+  to   { transform: translate(-50%, -50%) scale(1);  opacity: 1; }
+}
+
+/*Circle Outline Effect*/
+.dplf-pagination.dplf-pagination-style--outline-circle .swiper-pagination-bullet { padding: 0 10px; }
+.dplf-pagination.dplf-pagination-style--outline-circle .swiper-pagination-bullet svg.dplf-pagination--circle { transform: rotate(-135deg); }
+.dplf-pagination.dplf-pagination-style--outline-circle .swiper-pagination-bullet svg.dplf-pagination--circle circle {
+  stroke: var(--dplf-swiper-stroke-color);
+  stroke-width: var(--dplf-swiper-stroke-width);
+  stroke-dasharray: var(--dplf-swiper-outline-circle-perimeter);
+  stroke-dashoffset: var(--dplf-swiper-outline-circle-perimeter);
+  transition: stroke-dashoffset var(--dplf-swiper-dot-transition), stroke .2s ease;
+}
+
+.dplf-pagination.dplf-pagination-style--outline-circle .swiper-pagination-bullet:hover svg.dplf-pagination--circle,
+.dplf-pagination.dplf-pagination-style--outline-circle .swiper-pagination-bullet.swiper-pagination-bullet-active svg.dplf-pagination--circle {
+  transform: rotate(-45deg);
+}
+
+.dplf-pagination.dplf-pagination-style--outline-circle .swiper-pagination-bullet:hover svg.dplf-pagination--circle circle,
+.dplf-pagination.dplf-pagination-style--outline-circle .swiper-pagination-bullet.swiper-pagination-bullet-active svg.dplf-pagination--circle circle {
+  stroke: var(--dplf-swiper-stroke-active-color);
+  stroke-dashoffset: var(--dplf-swiper-outline-draw-offset);
+}
+
+/*Square Outline Effect*/
+.dplf-pagination.dplf-pagination-style--outline-square .swiper-pagination-bullet { padding: 0 10px; }
+.dplf-pagination.dplf-pagination-style--outline-square .swiper-pagination-bullet .dplf-dot { border-radius: 0; }
+.dplf-pagination.dplf-pagination-style--outline-square .swiper-pagination-bullet svg.dplf-pagination--square rect {
+  stroke: var(--dplf-swiper-stroke-color);
+  stroke-width: var(--dplf-swiper-stroke-width);
+  stroke-dasharray: var(--dplf-swiper-outline-square-perimeter);
+  stroke-dashoffset: var(--dplf-swiper-outline-square-perimeter);
+  transition: stroke-dashoffset var(--dplf-swiper-dot-transition), stroke .2s ease;
+}
+
+.dplf-pagination.dplf-pagination-style--outline-square .swiper-pagination-bullet:hover svg.dplf-pagination--square rect,
+.dplf-pagination.dplf-pagination-style--outline-square .swiper-pagination-bullet.swiper-pagination-bullet-active svg.dplf-pagination--square rect {
+  stroke: var(--dplf-swiper-stroke-active-color);
+  stroke-dashoffset: var(--dplf-swiper-outline-draw-offset);
+}
+
+/*Diamond Outline Effect*/
+.dplf-pagination.dplf-pagination-style--outline-diamond .swiper-pagination-bullet {
+  transform: rotate(45deg);
+}
+
+.dplf-pagination.dplf-pagination-style--outline-diamond .swiper-pagination-bullet .dplf-dot { border-radius: 0; }
+.dplf-pagination.dplf-pagination-style--outline-diamond .swiper-pagination-bullet svg.dplf-pagination--diamond {
+  transform: rotate(-90deg);
+}
+
+.dplf-pagination.dplf-pagination-style--outline-diamond .swiper-pagination-bullet svg.dplf-pagination--diamond rect {
+  stroke: var(--dplf-swiper-stroke-color);
+  stroke-width: var(--dplf-swiper-stroke-width);
+  stroke-dasharray: var(--dplf-swiper-outline-diamond-perimeter);
+  stroke-dashoffset: var(--dplf-swiper-outline-diamond-perimeter);
+  transition: stroke-dashoffset var(--dplf-swiper-dot-transition), stroke .2s ease;
+}
+
+.dplf-pagination.dplf-pagination-style--outline-diamond .swiper-pagination-bullet:hover svg.dplf-pagination--diamond,
+.dplf-pagination.dplf-pagination-style--outline-diamond .swiper-pagination-bullet.swiper-pagination-bullet-active svg.dplf-pagination--diamond {
+  transform: rotate(-90deg);
+}
+
+.dplf-pagination.dplf-pagination-style--outline-diamond .swiper-pagination-bullet:hover svg.dplf-pagination--diamond rect,
+.dplf-pagination.dplf-pagination-style--outline-diamond .swiper-pagination-bullet.swiper-pagination-bullet-active svg.dplf-pagination--diamond rect {
+  stroke: var(--dplf-swiper-stroke-active-color);
+  stroke-dashoffset: var(--dplf-swiper-outline-draw-offset);
+}
+
+/* =========================================================== */
+/* 00. Global Styles - Swiper Navigation
+/* =========================================================== */
+.dplf-swiper-arrows {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.dplf-swiper-arrows.swiper-button-disabled {
+  opacity: 0.5;
+}
+
+.dplf-swiper-arrows svg {
+  height: auto;
+  line-height: 1;
+}
+
+/*Outside Arrows Positions*/
+.dplf-arrows-position--outside .dplf-navigation-next.dplf-position--default {
+  right: 0;
+  left: auto;
+}
+
+.dplf-arrows-position--outside .dplf-navigation-prev.dplf-position--default {
+  left: 0;
+  right: auto;
+}
+
+/*Outside Pagination Positions*/
+.dplf-pagination-position--outside .dplf-swiper-arrows.dplf-position--default,
+.dplf-pagination-position--outside .dplf-swiper-arrows.dplf-position--center-left,
+.dplf-pagination-position--outside .dplf-swiper-arrows.dplf-position--center,
+.dplf-pagination-position--outside .dplf-swiper-arrows.dplf-position--center-right {
+  top: calc(50% - 110px / 2);
+}
+
+/*Outside Scrollbar Position*/
+.dplf-scrollbar-position--outside .swiper .swiper-scrollbar {
+  left: 0 !important;
+  width: 100% !important;
+}
+
+/*Defaultx*/
+.dplf-swiper-arrows.dplf-position--default {
+  top: calc(50% - 30px / 2);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.dplf-navigation-next.dplf-position--default {
+  right: 30px;
+  left: auto;
+}
+
+.dplf-navigation-prev.dplf-position--default {
+  left: 30px;
+  right: auto;
+}
+
+/*Position Top - Outside*/
+.dplf-arrow-direction--top-left .swiper,
+.dplf-arrow-direction--top-center .swiper,
+.dplf-arrow-direction--top-right .swiper {
+  padding-top: 60px;
+  width: 100%;
+}
+
+/*Position Bottom - Outside*/
+.dplf-arrow-direction--bottom-left .swiper,
+.dplf-arrow-direction--bottom-center .swiper,
+.dplf-arrow-direction--bottom-right .swiper {
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+/*Position Center - Outside*/
+.dplf-arrow-direction--center-left .swiper,
+.dplf-arrow-direction--center-right .swiper {
+  width: 100%;
+}
+
+.dplf-arrow-direction--center .swiper {
+  width: 100%;
+}
+
+/*Position Left*/
+.dplf-navigation-next.dplf-position--top-left,
+.dplf-navigation-next.dplf-position--center-left,
+.dplf-navigation-next.dplf-position--bottom-left {
+  left: 50px;
+  right: auto;
+}
+
+.dplf-navigation-prev.dplf-position--top-left,
+.dplf-navigation-prev.dplf-position--center-left,
+.dplf-navigation-prev.dplf-position--bottom-left {
+  left: 0;
+  right: auto;
+}
+
+/*Position Center*/
+.dplf-navigation-next.dplf-position--top-center,
+.dplf-navigation-next.dplf-position--center,
+.dplf-navigation-next.dplf-position--bottom-center {
+  left: 52%;
+}
+
+.dplf-navigation-prev.dplf-position--top-center,
+.dplf-navigation-prev.dplf-position--center,
+.dplf-navigation-prev.dplf-position--bottom-center {
+  left: 48%;
+}
+
+/*Position Right*/
+.dplf-navigation-next.dplf-position--top-right,
+.dplf-navigation-next.dplf-position--center-right,
+.dplf-navigation-next.dplf-position--bottom-right {
+  right: 0;
+  left: auto;
+}
+
+.dplf-navigation-prev.dplf-position--top-right,
+.dplf-navigation-prev.dplf-position--center-right,
+.dplf-navigation-prev.dplf-position--bottom-right {
+  right: 50px;
+  left: auto;
+}
+
+.dplf-position--z-index{
+  z-index: 10
+}
+
+/* =========================================================== */
+/* 00. Global Styles - Transition
+/* =========================================================== */
+.dplf-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.dplf-transition {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dplf-transition:focus {
+  outline: none;
+}
+
+.dplf-transition-fade,
+[class*='dplf-transition-scale'],
+[class*='dplf-transition-slide'] {
+  transition: 0.3s ease-out;
+  transition-property: opacity, transform, filter;
+  opacity: 0;
+}
+
+/*Fade*/
+.dplf-transition:hover .dplf-transition-fade,
+.dplf-transition:focus .dplf-transition-fade,
+.dplf-transition-active.dplf-active .dplf-transition-fade {
+  opacity: 1;
+}
+
+/*Scale*/
+.dplf-transition-scale-up {
+  transform: scale(1, 1);
+}
+
+.dplf-transition-scale-down {
+  transform: scale(1.03, 1.03);
+}
+
+/* Show */
+.dplf-transition:hover .dplf-transition-scale-up,
+.dplf-transition:focus .dplf-transition-scale-up,
+.dplf-transition-active.dplf-active .dplf-transition-scale-up {
+  opacity: 1;
+  transform: scale(1.03, 1.03);
+}
+
+.dplf-transition:hover .dplf-transition-scale-down,
+.dplf-transition:focus .dplf-transition-scale-down,
+.dplf-transition-active.dplf-active .dplf-transition-scale-down {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+/*Slide*/
+.dplf-transition-slide-top {
+  transform: translateY(-100%);
+}
+
+.dplf-transition-slide-bottom {
+  transform: translateY(100%);
+}
+
+.dplf-transition-slide-left {
+  transform: translateX(-100%);
+}
+
+.dplf-transition-slide-right {
+  transform: translateX(100%);
+}
+
+.dplf-transition-slide-top-small {
+  transform: translateY(-10px);
+}
+
+.dplf-transition-slide-bottom-small {
+  transform: translateY(10px);
+}
+
+.dplf-transition-slide-left-small {
+  transform: translateX(-10px);
+}
+
+.dplf-transition-slide-right-small {
+  transform: translateX(10px);
+}
+
+.dplf-transition-slide-top-medium {
+  transform: translateY(-50px);
+}
+
+.dplf-transition-slide-bottom-medium {
+  transform: translateY(50px);
+}
+
+.dplf-transition-slide-left-medium {
+  transform: translateX(-50px);
+}
+
+.dplf-transition-slide-right-medium {
+  transform: translateX(50px);
+}
+
+/* Show */
+.dplf-transition:hover [class*='dplf-transition-slide'],
+.dplf-transition:focus [class*='dplf-transition-slide'],
+.dplf-transition-active.dplf-active [class*='dplf-transition-slide'] {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.dplf-transition-opaque {
+  opacity: 1;
+}
+
+.dplf-transition-slow {
+  transition-duration: 0.7s;
+}
+
+/* =========================================================== */
+/* 00. Global Styles - Position
+/* =========================================================== */
+[class*='dplf-position--top'],
+[class*='dplf-position--bottom'],
+[class*='dplf-position--left'],
+[class*='dplf-position--right'],
+[class*='dplf-position--center'] {
+  position: absolute !important;
+  max-width: 100%;
+}
+
+/* Edges */
+.dplf-position--top {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.dplf-position--bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.dplf-position--left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.dplf-position--right {
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Corners */
+.dplf-position--top-left {
+  top: 0;
+  left: 0;
+}
+
+.dplf-position--top-right {
+  top: 0;
+  right: 0;
+}
+
+.dplf-position--bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.dplf-position--bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+/* Center */
+.dplf-position--center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Vertical */
+[class*='dplf-position--center-left'],
+[class*='dplf-position--center-right'] {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dplf-position--center-left {
+  left: 0;
+}
+
+.dplf-position--center-right {
+  right: 0;
+}
+
+.dplf-position--center-left-out {
+  right: 100%;
+  width: max-content;
+}
+
+.dplf-position--center-right-out {
+  left: 100%;
+  width: max-content;
+}
+
+/* Horizontal */
+.dplf-position--top-center,
+.dplf-position--bottom-center {
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.dplf-position--top-center {
+  top: 0;
+}
+
+.dplf-position--bottom-center {
+  bottom: 0;
+}
