@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum:wght@400&family=Jost:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-dark: #0b0b0b;
+  --color-accent: #B2A096;
+  --color-dark-border: #292929;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #0b0b0b;
+  color: #ffffff;
+  font-family: 'Jost', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Forum', serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0b0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #B2A096;
+  border-radius: 3px;
+}
+
+/* Back to top */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 44px;
+  height: 44px;
+  background: #B2A096;
+  color: #0b0b0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  background: #d4c8c0;
+  transform: translateY(-3px);
+}
+
+/* Nav dropdown */
+.nav-dropdown:hover .nav-submenu {
+  display: block;
+}
+
+/* Input styles */
+input, select, textarea {
+  background: transparent;
+  border: 1px solid #292929;
+  color: white;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #B2A096;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #666;
+}
+
+select option {
+  background: #151515;
+  color: white;
+}
+
+/* Transitions */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* FAQ accordion */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-content.open {
+  max-height: 500px;
+}
+
+/* Services tab */
+.service-tab.active {
+  border-color: #B2A096;
+  color: #B2A096;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.mobile-menu.open {
+  max-height: 100vh;
+}
+
